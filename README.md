@@ -1,1 +1,1 @@
-# databases-dynamodb
+# Loading and Querying Data in DynamoDB
