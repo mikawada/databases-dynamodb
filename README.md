@@ -35,7 +35,7 @@ I started off by creating a simple DynamoDB table using the management console. 
 <img src="Screenshots_Part1/step2_1.png" alt="Preview" width="500"/>
 
 After creating the table, I selected "Explore Table Items" and created a new item to examine how to enter data manually via the console. I added an example name to the **StudentName** (partition key), then added a new attribute called **ProjectsComplete** with a value representing the number of projects completed.</br>
-<img src="Screenshots_Part1/step2_3.png" alt="Preview" width="500"/>
+<img src="Screenshots_Part1/step2_3.png" alt="Preview" width="700"/>
 
 ### Step 2: Create Table (CLI)
 
