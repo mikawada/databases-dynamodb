@@ -50,7 +50,11 @@ To check if the tables were created successfully, I went back to the console and
 
 ### Step 3: Load Data
 
-XXX
+Next, I proceeded to load some data into the tables I created. I opened up CloudShell again and ran a bit of code to download and unzip a file with the data I needed for the tables.</br>
+<img src="Screenshots_Part1/step4_1.png" alt="Preview" width="500"/>
+
+To verify the contents of the file, I ran **cat Forum.json** to read one of the JSON files directly in the terminal. It showed that the file had loaded successfully and contained the information about the new item and its attributes.
+<img src="Screenshots_Part1/step4_2.png" alt="Preview" width="500"/>
 
 ### _Part 2: Query Data_
 ### Step 1: Run Query (Console)
