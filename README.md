@@ -5,7 +5,7 @@
 </p>
 
 ## Description
-In this short project, I explored DynamoDB by creating tables, loading and editing data, and running queries using both the management console and AWS CloudShell. The procedures are divided into two parts - Part 1: Loading Data and Part 2: Querying Data.
+In this short project, I explored DynamoDB by creating tables, loading and editing data, and running queries using both the management console and AWS CloudShell. The procedures are divided into two parts - Part 1: Loading Data and Part 2: Querying Data. (_Guided project by NextWork_)
 
 ## Tools and Services Used
 - Amazon DynamoDB
@@ -27,7 +27,7 @@ In this short project, I explored DynamoDB by creating tables, loading and editi
 2. Run a query with AWS CloudShell
 3. Set up a transaction
 
-## Step-by-Step WalkthrIough
+## Step-by-Step Walkthrough
 ### _Part 1: Load Data_
 ### Step 1: Create Table (Console)
 
@@ -39,7 +39,14 @@ After creating the table, I selected "Explore Table Items" and created a new ite
 
 ### Step 2: Create Table (CLI)
 
-XXX
+After getting familiar with manually creating a table through the console, I decided to make the process more efficient by using **AWS CloudShell**, since relying on the console isn't ideal for handling large amounts of data. To get started, I clicked on the CloudShell icon at the top of my screen to open the CLI environment.</br>
+<img src="Screenshots_Part1/step3_1.png" alt="Preview" width="600"/>
+
+Then, I ran some basic commands (code provided by NextWork) to create tables using CLI.</br>
+<img src="Screenshots_Part1/step3_2.png" alt="Preview" width="500"/>
+
+To check if the tables were created successfully, I went back to the console and hit the "Tables" tab. There, I saw the four new tables I had just set up with CloudShell.</br>
+<img src="Screenshots_Part1/step3_3.png" alt="Preview" width="500"/>
 
 ### Step 3: Load Data
 
