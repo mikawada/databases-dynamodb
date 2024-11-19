@@ -77,12 +77,25 @@ I also used the **Filters** feature when querying items, selecting an attribute 
 
 ### Step 2: Run Query (CLI)
 
-XXX
+Next, I moved back to **AWS CloudShell** to run the same queries, aiming to make the process quicker and more efficient. I started by running a simple **get-item** command to query a single item, specifying the table and ID for the item I was interested in.</br>
+<img src="Screenshots_Part2/step2_1.png" alt="Preview" width="500"/>
+
+I then ran a few more queries with additional options for more control. I added **consistent-read** to ensure I was getting the most recent version of the item, and used **projection-expression** to display only specific attributes. I also included **return-consumed-capacity** to see how much capacity was used during the request, allowing me to compare strongly consistent reads with the default eventual consistency.</br>
+<img src="Screenshots_Part2/step2_2.png" alt="Preview" width="500"/></br>
+<img src="Screenshots_Part2/step2_3.png" alt="Preview" width="500"/></br>
+From the results, I was able to see that eventually consistent reads consumed only half the capacity of strongly consistent reads. For smaller, less critical datasets, I would opt for eventually consistent reads to save on capacity and costs, but for more important data that requires the most up-to-date information, I would rely on strongly consistent reads.
 
 ### Step 3: Set Up Transaction
 
-XXX
+As the final step, I set up transactions to handle related data across DynamoDB tables, ensuring that all related tables are updated promptly when new information is added. I began by using the CLI to run a transaction command and record a new comment by a new user. Transactions are crucial for ensuring updates are made consistently across related tables. In this case, both the **Comment** and **Forum** tables need to be updated, as the Forum table tracks the number of comments.</br>
+<img src="Screenshots_Part2/step3_3.png" alt="Preview" width="500"/>
+
+I then checked if the comment count had increased in the specified table by running the command below. I was able to confirm that the number of comments had gone from 0 to 1.</br>
+<img src="Screenshots_Part2/step3_4.png" alt="Preview" width="500"/>
+
+This concludes the short project on an introduction to DynamoDB tables. To avoid any unexpected charges, I immediately deleted all the tables I had created using a CloudShell command.</br>
+<img src="Screenshots_Part2/step3_6.png" alt="Preview" width="500"/>
 
 ## Conclusion
 
-XXX
+This guided project by NextWork was a great way to get familiar with DynamoDB tables, using both the management console and AWS CloudShell. As queries become more complex and datasets grow larger, I know there will be much more to learn about the various commands to optimize performance. In the near future, I also plan to delve into relational databases to better understand the distinctions between them and NoSQL databases like DynamoDB.
