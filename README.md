@@ -65,7 +65,15 @@ I went back to the console to check that the new items were uploaded successfull
 ### _Part 2: Query Data_
 ### Step 1: Run Query (Console)
 
-XXX
+Now onto part 2, where I query the data loaded into DynamoDB. First, I used the management console to manually query some items. I navigated to the **ContentCatalog** table, entered an ID (201 in this case), and executed the query. It successfully returned only the specific item I searched for within the table.</br>
+<img src="Screenshots_Part2/step1_1.png" alt="Preview" width="500"/></br>
+<img src="Screenshots_Part2/step1_2.png" alt="Preview" width="500"/>
+
+To get more familiar with the console, I proceeded to query another table. This time, I went to the **Comment** table and entered both a partition key (ID) and a sort key to query by keywords and the date the comment was posted.</br>
+<img src="Screenshots_Part2/step1_3.png" alt="Preview" width="500"/>
+
+I also used the **Filters** feature when querying items, selecting an attribute and setting a condition. In this case, I filtered by a specific user's name to retrieve only the comments posted by that user.</br>
+<img src="Screenshots_Part2/step1_4.png" alt="Preview" width="500"/>
 
 ### Step 2: Run Query (CLI)
 
