@@ -13,7 +13,7 @@ In this short project, I explored DynamoDB by creating tables, loading and editi
 - AWS CloudShell
 
 ## Cost and Time
-- Cost: $0
+- Cost: $0 (eligible for free tier)
 - Time: 1 hour
 
 ## Key Procedures
